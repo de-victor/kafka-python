@@ -1,0 +1,13 @@
+version: '3'
+services:
+    kafka-server:
+        image: victords/kafka
+        container_name: kafka-server
+        hostname: kafka-server
+        ports:
+          - 29092:29092
+          - 9092:9092
+        
+        volumes:
+            - . :/home/tmp
+        
